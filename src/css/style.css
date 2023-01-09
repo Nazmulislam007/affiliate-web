@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.hover-style {
+  position: relative;
+}
+
+.hover-style::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  width: 0%;
+  height: 1px;
+  background: white;
+  transition: width 300ms ease-in-out;
+}
+
+.hover-style:hover::before {
+  width: 100%;
+}
+
+.angle-rotate:hover > .fa-solid {
+  transition: transform 300ms ease-in-out;
+  transform: rotate(180deg);
+}
+
+.dropdown:hover > .dropdown-content {
+  display: block;
+}

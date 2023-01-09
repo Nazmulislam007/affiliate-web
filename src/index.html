@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Affiliate-website</title>
+  </head>
+  <body class="bg-bg">
+    <header>
+      <div class="w-full bg-[#0d0d0d] py-3">
+        <nav
+          class="max-w-[1000px] w-[95%] mx-auto flex items-center justify-between"
+        >
+          <h2
+            class="text-3xl font-bold flex md:items-center md:flex-row flex-col leading-normal text-cb"
+          >
+            LENSS
+            <span class="text-[11px] md:pl-2 md:mt-[-11px] font-medium"
+              >THE SOURCE OF TECH BUYING ADVICE</span
+            >
+          </h2>
+          <ul class="lg:flex gap-7 items-center hidden">
+            <li>
+              <a href="#" class="text-cb hover-style text-[17px]">Trending</a>
+            </li>
+            <li>
+              <a href="#" class="text-cb hover-style text-[17px]">Best Picks</a>
+            </li>
+            <li>
+              <a href="#" class="text-cb hover-style text-[17px]">Reviews</a>
+            </li>
+            <li>
+              <a href="#" class="text-cb hover-style text-[17px]">Blogs</a>
+            </li>
+            <li
+              class="text-cb relative angle-rotate dropdown inline-block text-[17px] cursor-pointer"
+            >
+              More <i class="fa-solid fa-angle-down ml-2 mt-[1.5px]"></i>
+              <ul
+                style="width: 150%; right: -10%"
+                class="dropdown-content hidden absolute top-[100%] overflow-auto bg-[#0d0d0d] py-2 px-4"
+              >
+                <li class="mb-1">
+                  <a href="#" class="text-cb hover-style text-[17px]">Item 1</a>
+                </li>
+                <li>
+                  <a href="#" class="text-cb hover-style text-[17px]">Item 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="text-cb">|</li>
+            <li>
+              <a href="#" class="text-cb text-[17px]"
+                ><i class="fa-solid fa-magnifying-glass text-cb"></i
+              ></a>
+            </li>
+          </ul>
+          <button class="lg:hidden">
+            <i class="fa-sharp fa-solid fa-bars text-cb fa-lg"></i>
+          </button>
+          <!-- <label class="relative block">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                <i class="fa-solid fa-magnifying-glass text-slate-400"></i>
+              </span>
+              <input
+                class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-8 pr-3 shadow-sm focus:outline-none focus:border-emerald-500 focus:ring-1 sm:text-sm"
+                placeholder="Search for anything..."
+                type="text"
+                name="search"
+              />
+            </label> -->
+        </nav>
+      </div>
+    </header>
+    <main class="max-w-[1000px] w-[95%] mx-auto">
+      <!-- today's pick -->
+      <section class="mb-16">
+        <h2 class="text-2xl my-6 font-semibold">Today's picks</h2>
+        <div class="grid gap-y-10 gap-x-6 lg:grid-cols-3 md:grid-cols-2">
+          <!-- row start-->
+          <article class="lg:col-span-3 md:col-span-2">
+            <div class="grid gap-5 md:grid-cols-3">
+              <div class="md:col-span-2 col-span-3">
+                <a href="#">
+                  <img
+                    src="https://source.unsplash.com/Im7lZjxeLhg"
+                    class="h-[350px] w-full object-cover"
+                    alt="tech"
+                  />
+                </a>
+                <header>
+                  <div class="text-gray-500 mt-3 mb-[5px] block w-full text-sm">
+                    Kate Glotova | <span>5 min read</span> |
+                    <span>March 13 ,2022</span>
+                  </div>
+                  <h3
+                    class="text-[22px] mb-[6px] font-semibold hover:text-blue-500"
+                  >
+                    <a href="#">Anima Introduces: Hotspots Hints</a>
+                  </h3>
+                  <p class="leading-6 text-gray-600 mb-2">
+                    Write the blog description right here, Write the blog
+                    description right here, Write the blog description right
+                    here.Write the blog description right here, Write the blog
+                    description right here, Write the blog description right
+                    here. Write the blog description right here, Write the blog
+                    description right here, Write the blog description right
+                    here.
+                  </p>
+                  <a href="#" class="text-sm text-blue-600 hover:underline"
+                    >Learn more</a
+                  >
+                </header>
+              </div>
+              <ul class="md:col-span-1 col-span-3">
+                <li
+                  class="flex items-center justify-center py-3 border-t border-t-gray-300 text-lg"
+                >
+                  <span
+                    ><i
+                      class="fa-solid fa-wand-magic-sparkles text-3xl mr-3"
+                    ></i
+                  ></span>
+                  <a href="#">RECENT BLOGS</a>
+                </li>
+                <li class="py-3 border-t border-t-gray-300 font-semibold">
+                  <a href="#"
+                    >Nvidia GeForce RTX 3080 Founders Edition Nvidia GeForce RTX
+                    4070 Specs Leak: AD104 Cut by a Quarter</a
+                  >
+                </li>
+                <li class="py-3 border-t border-t-gray-300 font-semibold">
+                  <a href="#"
+                    >This horror game looks like Silent Hill, but it doesn't get
+                    what made it scary</a
+                  >
+                </li>
+                <li class="py-3 border-t border-t-gray-300 font-semibold">
+                  <a href="#"
+                    >Nvidia GeForce RTX 3080 Founders Edition Nvidia GeForce RTX
+                    4070 Specs Leak: AD104 Cut by a Quarter</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+          <!-- row start-->
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/SYTO3xs06fU"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/p0j-mE6mGo4"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/SYTO3xs06fU"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+        </div>
+      </section>
+      <!-- tranding -->
+      <section class="mb-16">
+        <header
+          class="text-2xl my-10 font-semibold border-b flex items-center justify-between border-gray-400 py-3"
+        >
+          <h4>Trending</h4>
+          <a href="#" class="text-lg underline hover:text-blue-500">See more</a>
+        </header>
+
+        <div class="grid gap-y-10 gap-x-6 lg:grid-cols-3 sm:grid-cols-2">
+          <!-- row start-->
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/SYTO3xs06fU"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/p0j-mE6mGo4"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/SYTO3xs06fU"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+        </div>
+      </section>
+      <!-- best sales -->
+      <section class="mb-16">
+        <header
+          class="text-2xl my-10 font-semibold border-b flex items-center justify-between border-gray-400 py-3"
+        >
+          <h4>Best Sales</h4>
+          <a href="#" class="text-lg underline hover:text-blue-500">See more</a>
+        </header>
+        <div class="grid gap-y-10 gap-x-6 lg:grid-cols-3 sm:grid-cols-2">
+          <!-- row start-->
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/SYTO3xs06fU"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/p0j-mE6mGo4"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/SYTO3xs06fU"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/SYTO3xs06fU"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/p0j-mE6mGo4"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+          <article>
+            <figure>
+              <img
+                src="https://source.unsplash.com/SYTO3xs06fU"
+                class="w-full object-cover"
+                alt="tech"
+              />
+            </figure>
+            <header>
+              <div class="text-gray-500 mt-3 mb-[5px] block w-full text-[13px]">
+                Kate Glotova | <span>5 min read</span> |
+                <span>March 13 ,2022</span>
+              </div>
+              <h3 class="text-[20px] leading-6 mb-[6px] font-semibold">
+                Anima Introduces: Hotspots Hints
+              </h3>
+              <p class="leading-6 text-gray-600">
+                Nvidia GeForce RTX 4070 Specs Leak: AD104 Cut by a Quarter...
+              </p>
+            </header>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#0d0d0d] text-cb">
+      <div
+        class="max-w-[1000px] w-[95%] mx-auto py-8 lg:flex-row flex-col flex items-center justify-between gap-4"
+      >
+        <div class="text-3xl font-bold flex items-center leading-normal">
+          LENSS
+        </div>
+        <ul class="flex items-center gap-2 md:flex-row flex-col text-[14px]">
+          <li><a href="#">About</a></li>
+          <li class="hidden md:block">·</li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li class="hidden md:block">·</li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+        <div class="flex items-center gap-3">
+          <span>Follow us : </span>
+          <ul class="flex items-center gap-2">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-pinterest-p fa-lg"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

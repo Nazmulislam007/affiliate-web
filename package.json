@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "npx tailwindcss -i ./css/style.css -o ./dist/style.css --watch",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
